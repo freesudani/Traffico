@@ -23,9 +23,9 @@ const Button = styled.button`
         return `
                 background-color: transparent;
                 color: ${Colors.Text.TextWhite};
-                border-bottom : transparent;
+                border : transparent;
                 &:hover {
-                border-bottom: 1rem solid ${Colors.Brand.PrimaryDark};
+                color: ${Colors.Brand.PrimaryDark};
                 }
               `;
     }

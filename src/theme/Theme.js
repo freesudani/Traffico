@@ -15,8 +15,8 @@ export const TextStyles = {
   Heading: {
     H1: {
       fontFamily: "DM Serif Display",
-      FontSize: "100px",
-      LineHeight: "100px",
+      FontSize: "8rem",
+      LineHeight: "8rem",
       LetterSpacing: "0",
       FontWeight: 400,
     },
