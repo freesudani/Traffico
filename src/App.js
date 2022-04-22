@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import AboutUs from "./components/AboutUs";
+import FAQ from "./components/FAQ";
+import HowToApply from "./components/HowToApply";
 import Top from "./components/Top";
 
 const AppSec = styled.div`
@@ -13,6 +16,9 @@ const App = () => {
   return (
     <AppSec>
       <Top />
+      <AboutUs />
+      <HowToApply />
+      <FAQ />
     </AppSec>
   );
 };
