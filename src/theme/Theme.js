@@ -22,8 +22,8 @@ export const TextStyles = {
     },
     H2: {
       fontFamily: "DM Serif Display",
-      FontSize: "45px",
-      LineHeight: "60.2px",
+      FontSize: "4.5rem",
+      LineHeight: "6.02rem",
       LetterSpacing: "0",
       FontWeight: 400,
     },

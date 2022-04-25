@@ -5,6 +5,8 @@ import ThinkingImage from "../images/Group 14.png";
 import Subtitle1 from "../theme/Subtitle1.styled";
 import { Colors } from "../theme/Theme";
 import H2 from "../theme/H2.styled";
+import Question from "../components/Question";
+import { data } from "../data/Questions";
 
 const FAQSec = styled.div`
   width: 100vw;
@@ -42,6 +44,13 @@ const ThinkingImageBox = styled.div`
   margin-right: 17.7rem;
 `;
 
+const Bottom = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 1em;
+`;
+
 const FAQ = () => {
   return (
     <FAQSec>
@@ -58,6 +67,11 @@ const FAQ = () => {
           <img src={ThinkingImage} alt="thinking" />
         </ThinkingImageBox>
       </Top>
+      {/* <Bottom>
+        {data.map((article, i) => {
+          return <Question key={i} question={article.question} />;
+        })}
+      </Bottom> */}
     </FAQSec>
   );
 };
