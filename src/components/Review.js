@@ -5,8 +5,11 @@ import Body5 from "../theme/Body5.styled";
 import Body4 from "../theme/Body4.styled";
 
 const RevSec = styled.div`
+  display: grid;
+  grid-template-rows: 3fr 1fr;
   height: 36rem;
   width: 42rem;
+  padding: 6rem 5.2rem 4rem 4.8rem;
   background-color: ${Colors.Text.TextWhite};
   border-radius: 1rem;
 `;
@@ -18,10 +21,9 @@ const RevText = styled.div`
 
 const RevPerson = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 4rem;
-  margin-left: 4.8rem;
+  justify-content: left;
+  align-items: end;
+
   width: 24rem;
   height: 6rem;
 `;

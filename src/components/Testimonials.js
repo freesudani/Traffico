@@ -8,6 +8,7 @@ import {
   HiOutlineArrowNarrowRight,
 } from "react-icons/hi";
 import Review from "../components/Review";
+import { customertesti } from "../data/CustomerTesti";
 
 const TestiSec = styled.div`
   position: relative;
@@ -19,6 +20,7 @@ const TestiSec = styled.div`
 `;
 
 const Top = styled.div`
+  padding-top: -4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,16 +54,21 @@ const ButtongGroup = styled.div`
 
 const Bottom = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
 `;
 
 const Title = styled.div`
   width: 30rem;
+  margin-top: 4rem;
   text-align: left;
 `;
 
-const Reviews = styled.div``;
+const Reviews = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 42rem);
+  grid-column-gap: 20px;
+`;
 
 const Testimonials = () => {
   return (
@@ -84,7 +91,14 @@ const Testimonials = () => {
           <H2>Out Awesome Clients</H2>
         </Title>
         <Reviews>
-          <Review />
+          {customertesti.map((testi, index) => (
+            <Review
+              key={index}
+              parag={testi.qoute}
+              picture={testi.picture}
+              title={testi.customer}
+            />
+          ))}
         </Reviews>
       </Bottom>
     </TestiSec>
