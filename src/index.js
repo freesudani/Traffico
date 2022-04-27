@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   }
  
   body{
-    background-color:${Colors.Brand.BG2};
+    background-color: ${Colors.Brand.BG};
     width: 160rem;
     padding: 0;
     margin: 0;

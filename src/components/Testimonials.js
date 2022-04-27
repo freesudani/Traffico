@@ -17,10 +17,10 @@ const TestiSec = styled.div`
   height: 45.4rem;
   margin-left: 24rem;
   overflow-x: hidden;
+  background-color: ${Colors.Brand.BG};
 `;
 
 const Top = styled.div`
-  padding-top: -4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,6 +68,8 @@ const Reviews = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 42rem);
   grid-column-gap: 20px;
+  background-color: transparent;
+  padding-top: 8rem;
 `;
 
 const Testimonials = () => {

@@ -10,21 +10,30 @@ const QuestionSec = styled.div`
   align-items: center;
   width: 55rem;
   height: 9rem;
-  padding: auto 3.5rem;
   background-color: ${Colors.Text.TextWhite};
   border-radius: 1rem;
 `;
 
+const Qtext = styled.div`
+  margin-left: 3.5rem;
+  max-width: 40rem;
+`;
+
 const Button = styled.button`
   color: ${Colors.Brand.PrimaryMain};
-  width: 2rem;
-  height: 2rem;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+
+  margin-right: 3.5rem;
 `;
 
 const Question = (props) => {
   return (
     <QuestionSec>
-      <Body3>{props.question}</Body3>
+      <Qtext>
+        <Body3>{props.question}</Body3>
+      </Qtext>
       <Button>
         <AiOutlinePlus />
       </Button>

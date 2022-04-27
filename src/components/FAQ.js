@@ -7,10 +7,12 @@ import { Colors } from "../theme/Theme";
 import H2 from "../theme/H2.styled";
 import Question from "../components/Question";
 import { data } from "../data/Questions";
+import Body3 from "../theme/Body3.styled";
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
 const FAQSec = styled.div`
   width: 100vw;
-  height: 150rem;
+  height: 100%;
   margin-top: 12rem;
   margin-left: 24rem;
   margin-right: 0rem;
@@ -49,6 +51,31 @@ const Bottom = styled.div`
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
   row-gap: 1em;
+  max-width: 112rem;
+`;
+
+const LoadMore = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55rem;
+  height: 9rem;
+  background: rgba(237, 77, 71, 0.2);
+  border-radius: 1rem;
+  grid-column: 2 / -1;
+`;
+
+const LoadMoreText = styled.div`
+  margin-left: 40%;
+  color: ${Colors.Brand.PrimaryMain};
+`;
+
+const LoadMoreButton = styled.button`
+  color: ${Colors.Brand.PrimaryMain};
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  margin-right: 3.5rem;
 `;
 
 const FAQ = () => {
@@ -67,11 +94,19 @@ const FAQ = () => {
           <img src={ThinkingImage} alt="thinking" />
         </ThinkingImageBox>
       </Top>
-      {/* <Bottom>
+      <Bottom>
         {data.map((article, i) => {
           return <Question key={i} question={article.question} />;
         })}
-      </Bottom> */}
+        <LoadMore>
+          <LoadMoreText>
+            <Body3>LOAD MORE</Body3>
+          </LoadMoreText>
+          <LoadMoreButton>
+            <AiOutlinePlus />
+          </LoadMoreButton>
+        </LoadMore>
+      </Bottom>
     </FAQSec>
   );
 };

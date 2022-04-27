@@ -2,7 +2,7 @@ export const Colors = {
   Brand: {
     PrimaryMain: "#EE4D47",
     PrimaryDark: "#BE3D38",
-    BG: "#FDEDE8",
+    BG: "#FEF8F5",
     BG2: "FCDDD4",
   },
   Text: {

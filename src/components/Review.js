@@ -7,15 +7,15 @@ import Body4 from "../theme/Body4.styled";
 const RevSec = styled.div`
   display: grid;
   grid-template-rows: 3fr 1fr;
-  height: 36rem;
-  width: 42rem;
-  padding: 6rem 5.2rem 4rem 4.8rem;
+  height: 30rem;
+  width: 32rem;
+  padding: 1rem 5.2rem 1rem 4.8rem;
   background-color: ${Colors.Text.TextWhite};
   border-radius: 1rem;
 `;
 
 const RevText = styled.div`
-  margin-top: 6rem;
+  margin-top: 2rem;
   width: 32rem;
 `;
 
