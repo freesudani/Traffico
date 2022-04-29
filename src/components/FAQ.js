@@ -96,7 +96,13 @@ const FAQ = () => {
       </Top>
       <Bottom>
         {data.map((article, i) => {
-          return <Question key={i} question={article.question} />;
+          return (
+            <Question
+              key={i}
+              question={article.question}
+              answer={article.answer}
+            />
+          );
         })}
         <LoadMore>
           <LoadMoreText>
